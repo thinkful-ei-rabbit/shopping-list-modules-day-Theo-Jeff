@@ -1,13 +1,13 @@
 import item from './item.js';
 
-const store = {
-    items: [],
-    hideCheckedItems: false
-  };
+const items= [];
+const hideCheckedItems = false;
+
 
 export default{
-    items,
-    hideCheckedItems
+  items,
+  hideCheckedItems
 };
+
 
 
