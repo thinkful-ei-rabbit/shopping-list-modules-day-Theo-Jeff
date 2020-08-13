@@ -11,7 +11,9 @@ const main = function () {
       store.items.push(item.create(name));
     } catch (error) {
       console.log(`Cannot add item: ${error.message}`);
+      
     }
+    console.log(itemNames)
   });
   shoppingList.bindEventListeners();
   shoppingList.render();
