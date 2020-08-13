@@ -6,7 +6,7 @@ const store = {
   };
 
 export default{
-    items,
+    items, // items  is not defined?
     hideCheckedItems
 };
 

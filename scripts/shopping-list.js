@@ -43,7 +43,19 @@ const render = function () {
 };
 
 const addItemToShoppingList = function (itemName) {
+  // Exercise No. 4: update using methods from item.js
+  /*
+  try {
+    item.validateName(itemName);
+    store.items.push(item.create(itemName));
+    render();
+  } catch (error){
+    console.log(`Cannot add item: ${error.message}`);
+  }
+  */  
+  /* original code being replaced
   store.items.push({ id: cuid(), name: itemName, checked: false });
+  */
 };
 
 const handleNewItemSubmit = function () {

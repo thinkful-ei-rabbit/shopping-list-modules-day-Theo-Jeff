@@ -1,6 +1,8 @@
+import store from './store.js';
 import item from './item.js';
 import shoppingList from './shopping-list.js';
-import store from './store.js';
+
+
 
 const main = function () {  
   // Exercise No. 3: should create two shopping items in DOM and one error message in the console
