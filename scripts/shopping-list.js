@@ -43,13 +43,25 @@ const render = function () {
 };
 
 const addItemToShoppingList = function (itemName) {
+<<<<<<< HEAD
   // Exercise No. 4: update using methods from item.js  
+=======
+   //Exercise No. 4: update using methods from item.js
+  
+>>>>>>> 40549bb8e76b295bdd66aca8b16f54422a85f5e0
   try {
     item.validateName(itemName);
     store.items.push(item.create(itemName));
     render();
   } catch (error){
+<<<<<<< HEAD
     console.log(`Cannot add item: ${error.message}`); }  
+=======
+    console.log(`Cannot add item: ${error.message}`);
+  }
+  
+  
+>>>>>>> 40549bb8e76b295bdd66aca8b16f54422a85f5e0
 };
 
 const handleNewItemSubmit = function () {
