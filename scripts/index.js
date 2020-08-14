@@ -21,9 +21,9 @@ const main = function () {
 
 $(main);
 
-store.addItem('bananas');
-store.addItem('apples');
-store.addItem('rice');
+store.addItem('defaultBananas');
+store.addItem('defaultApples');
+store.addItem('defaultRice');
 // grab the id of the first store item (bananas)
 let id = store.items[0].id;
 // delete this item from the store
