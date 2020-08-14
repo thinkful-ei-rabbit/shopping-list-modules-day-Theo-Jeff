@@ -4,8 +4,7 @@ import shoppingList from './shopping-list.js';
 
 
 
-const main = function () {  
-  // Exercise No. 3: should create two shopping items in DOM and one error message in the console
+const main = function () {    
   const itemNames = ['', 'apples', 'pears' ];
   itemNames.forEach(name => {
     try {
@@ -13,7 +12,7 @@ const main = function () {
       //create a new item if name is valid
       store.items.push(item.create(name));
     } catch(error) {
-      console.log('Cannot add item: ${error.message}');
+      console.log(`Cannot add item: ${error.message}`);
     }
   });
   shoppingList.bindEventListeners();
@@ -21,3 +20,13 @@ const main = function () {
 };
 
 $(main);
+
+store.addItem('bananas');
+store.addItem('apples');
+store.addItem('rice');
+// grab the id of the first store item (bananas)
+let id = store.items[0].id;
+// delete this item from the store
+store.findAndDelete(id);
+shoppingList.render();
+
